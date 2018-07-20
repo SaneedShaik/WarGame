@@ -1,0 +1,251 @@
+body {
+     background-color: #168e88;
+     color: #fff;
+     font-family: Lato, sans-serif;
+     letter-spacing: .1em;
+     margin: 0;
+     overflow-x: hidden;
+     text-align: center;
+}
+ button {
+     border-radius: 100px;
+     height: 100px;
+     width: 100px;
+     color: white;
+     font-weight: bold;
+     font-family: sans-serif;
+     text-align: center;
+     text-decoration: none;
+     cursor: pointer;
+     font-size: 20px;
+     margin-top: 10px;
+     border: 0;
+}
+
+ h1 {
+     font-size: 100px;
+     font-family: Komtit;
+     font-weight: bolder;
+     margin: 0 0 20px 0;
+     padding: 0;
+}
+ h2 {
+     margin: auto;
+}
+ h3 {
+     font-size: 40px;
+     font-family: Komtit;
+     margin: 0;
+     padding: 0;
+}
+ img {
+     border-radius: 10px;
+     box-shadow: 3px 3px 3px #222;
+     width: 100%;
+}
+ footer {
+     color: #e8e8e8;
+     margin-top: 50px;
+     padding: 10px 0;
+     width: 100%;
+}
+ #jumbotron {
+     background-color: #592b2b;
+     padding: 20px 0 40px;
+}
+ #jumbotron h3 {
+     -vendor-animation-delay: 2s;
+}
+ .blink{
+     padding: 15px;
+     text-align: center;
+     font-family: serif;
+}
+ span{
+     font-size: 75px;
+     font-family: serif;
+     color: blanchedalmond;
+     animation: blink 1s linear infinite;
+}
+ @keyframes blink{
+     0%{
+        opacity: 0;
+    }
+     50%{
+        opacity: .5;
+    }
+     100%{
+        opacity: 1;
+    }
+}
+ #header {
+     background-color: #592b2b;
+     max-width: 100%;
+     overflow: hidden;
+     text-align: center;
+     width: 100%;
+     padding: 10px;
+}
+ #table {
+     margin: auto;
+}
+ #howTo div {
+     display: inline-block;
+     font-size: 20px;
+     margin: 40px 20px;
+     max-width: 500px;
+     text-align: justify;
+     vertical-align: top;
+     width: 80%;
+}
+ #desktop {
+     margin-top: 50px;
+}
+ #playButton {
+     margin-top: 20px;
+     background-color: #8D1126;
+}
+ #displayCard {
+     margin-bottom: 120px;
+}
+ .rulesButton {
+     margin-top: 20px;
+     background-color: #AE4A29;
+}
+ .panel {
+     padding: 50px;
+     display: none;
+}
+ #tiePanel {
+     display: none;
+     font-family: Komtit;
+     font-size: 10vw;
+     height: 60vh;
+     left: 0;
+     overflow: hidden;
+     position: fixed;
+     top: 10vh;
+     width: 100vw;
+     z-index: 1000;
+}
+ #tieText {
+     display: table-cell;
+     vertical-align: middle;
+     color: #ce1010;
+}
+ #tableArea {
+     background: rgba(0,0,0,0.7);
+     height: 60vh;
+     left: 0;
+     line-height: 60vh;
+     position: fixed;
+     top: 10vh;
+     width: 100vw;
+     z-index: 900;
+}
+ #tableArea div {
+     display: inline-block;
+     margin: 0 20px;
+     max-width: 200px;
+     width: 20%;
+     vertical-align: middle;
+}
+ .tie {
+     animation: war 2s infinite;
+}
+ .playerAcards, .playerBcards {
+     position: relative;
+     top: -142px;
+}
+ .playerAcards img, .playerBcards img {
+     display: inline-block;
+     position: absolute;
+}
+ .playerAcards img:first-child, .playerBcards img:first-child {
+     left: 0;
+}
+ .playerAcards img:nth-child(2) {
+     left: -10px;
+     z-index: 901;
+}
+ .playerAcards img:nth-child(3) {
+     left: -20px;
+     z-index: 902;
+}
+ .playerBcards img:nth-child(2) {
+     left: 10px;
+     z-index: 901;
+}
+ .playerBcards img:nth-child(3) {
+     left: 20px;
+     z-index: 902;
+}
+/* -- pulsing color animation -- */
+ @keyframes war {
+     10%, 30%, 50%, 70%, 90% {
+         background-color: #000000;
+    }
+}
+ .gameHeader {
+     margin: auto;
+     width: 100%;
+}
+ .gameHeader div {
+     display: inline-block;
+     vertical-align: middle;
+}
+ .PlayerAScore ,.PlayerBScore {
+     width: 20%;
+     background-color: #6b2222;
+     padding: 15px;
+     margin: auto;
+     color: blanchedalmond;
+}
+
+ .gameResult {
+     margin: auto;
+     padding: 20px 0;
+     width: 85%;
+}
+ .gameResult div {
+     display: inline-block;
+     vertical-align: middle;
+}
+ .playerACount, .playerBCount {
+     font-size: 20px;
+     font-weight: bolder;
+     margin: auto;
+}
+ .result {
+     font-size: 25px;
+     font-weight: bolder;
+     font-family: 'Orbitron', sans-serif;
+     margin: auto;
+     width: 45%;
+     background-color: #111111;
+     color: #af2121;
+     padding: 20px 0px;
+}
+ .gameArea div {
+     display: inline-block;
+     max-width: 55%;
+     margin: 0 50px;
+     vertical-align: middle;
+     width: 150px;
+     margin-bottom: 120px;
+}
+ #Options {
+     margin-bottom: 120px;
+}
+ .deal {
+     background-color: #d81a1a;
+}
+ #newgame {
+     background-color: #b25530;
+}
+ #auto {
+     background-color: #731C3A;
+}
+ #pause {
+     background-color: #593642;
+}

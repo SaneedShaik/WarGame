@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" contingent="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Saneed Shaik </title>
+
+    <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src='wargame.js'></script>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.css">
+    <link rel="stylesheet" type="text/css" href="wargame.css">
+</head>
+
+<body>
+    <div class='jumbotron' id='jumbotron'>
+        <div class="blink"><span>Let's Start A War!!!</span></div>
+    </div><!-- end jumbotron div -->
+
+    <div id='header' style="display: none;">
+        <h2>TOTAL ROUNDS
+            <h2 id='roundCount'>0</h2>
+        </h2>
+    </div><!-- end header -->
+
+    <div id="table">
+        <div id='howToPlay'>
+
+            <button class='rulesButton' onclick="rules()">How to Play</button>
+
+            <div class="panel">All cards are shuffled, and then divided equally to each player in face down stacks (one stack for each player). Each player reveals the top card of their deck simultaneously, with the player revealing the highest-ranking card winning that particular round and thusly "capturing" their opponent's card (in addition to retaining their card). Both cards are then returned to the round-winner's deck, placed face down at the bottom. Gameplay continues in the above fashion, with players playing out consecutive rounds, until one player runs out of cards and loses.
+            </div>
+            <div>
+                <button id='playButton' onclick="play()">START</button>
+            </div>
+        </div><!-- End how to play div -->
+
+
+        <div id="tiePanel" class="tie">
+            <div id="tieText">IT'S A TIE</div><br>
+            <button class="chess" onclick="pause()">PLAY CHESS</button>
+        </div>
+
+        <div id="tableArea" style='display: none;'>
+            <div class='playerAfinal'></div>
+            <div class='playerAcards'></div>
+            <div class='playerBcards'></div>
+            <div class='playerBfinal'></div>
+        </div><!-- End tableArea div -->
+
+        <div id='gameTable'>
+
+            <div id='desktop' class="game animated fadeInUp">
+
+
+
+                <div class="gameArea">
+                    <div class="playerADeck"><img src="img/backcard.jpg">
+                    </div>
+                    <div id='displayCard' class="playerACard"></div>
+                    <div id="Options">
+                        <button class="deal" onclick="deal()">DEAL</button>
+                        <button id='auto' class="auto" onclick="auto()">AUTO</button>
+                        <button id='pause' class="pause" onclick="pause()">PAUSE</button>
+                        <button id='newgame' class="newGame" onclick="location.reload()">NEW GAME</button>
+                    </div><!-- End Options div -->
+                    <div id='displayCard' class="playerBCard"></div>
+
+                    <div class="playerBDeck"><img src="img/backcard.jpg">
+                    </div>
+
+                </div><!-- End gameTable div -->
+
+            </div><!-- End desktop div -->
+            <div class="gameHeader">
+                <div class="PlayerAScore">
+                    <div class="playerACount"></div><br />
+                    <div class="playerAPoints"></div>
+                </div>
+
+                <div class="result"></div>
+
+                <div class="PlayerBScore">
+                    <div class="playerBCount"></div><br />
+                    <div class="playerBPoints"></div>
+                </div>
+            </div>
+        </div><!-- End gametable div -->
+
+    </div><!-- End table div -->
+
+
+</body>
+
+</html>
