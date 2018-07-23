@@ -2,15 +2,29 @@
 War is a card game designed for two players, utilizing a standard (French style) 52-card deck of playing-cards. The objective is to "capture" all the cards in the game before your opponent.
 
 
-*Gameplay*
-All cards are shuffled, and then divided equally to each player in face down stacks (one stack for each player). Each player reveals the top card of their deck simultaneously, with the player revealing the highest-ranking card winning that particular round and thusly "capturing" their opponent's card (in addition to retaining their card). Both cards are then returned to the round-winner's deck, placed face down at the bottom. Gameplay continues in the above fashion, with players playing out consecutive rounds, until one player runs out of cards and loses.
+**Landing Page**
+Has two options to select 1. How to Play 2.Start game 
+
+**Game Table**
+Has three options to select 1. Deal 2. Auto/Pause 3. Newgame
+
+**DEAL**
+-> Game is between two players and each player has divided with 26-cards each ,So total 100 rounds are to be played ,Player A and Player B draws each card on click with "Deal" Button . If player A has number greater than Player B , he get's the lost card and one point from the Player B .Each round contuines until 100 rounds . Player Win's the game if he had more "Points" and cards left after the 100 Rounds.Each and every round the winner is been Displayed.
+
+**AUTO/PAUSE**
+-> Auto/Pause enables the game automatically without clicking deal.
+
+**NEWGAME**
+-> Start a new game in the between the play
 
 
-*Rankings*
-Cards are ranked by face value, with Ace, King, Queen, and Jack each (in order) taking the highest ranking, followed by number cards in numerical order (10 being worth more than a 9, etc.).
 
- *Ties*
- In the event of a tie in a round - two players playing the same ranked cards - both cards are left face up between the two players, and play proceeds to the next round. The winner of the next round takes all cards from the current as well as previous round.
-
- *Technologies*
+ **Technologies**
  HTML,CSS2/3,BOOTSTRAP,JAVASCRIPT,Jquery
+
+
+ **Run the Application**
+
+ Clone te project to the local machine and run the index.html 
+
+ **ENJOY THE GAME :)**
